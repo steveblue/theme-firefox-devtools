@@ -976,10 +976,20 @@
 				"punctuation.definition.metadata.markdown",
 				"beginning.punctuation.definition.list.markdown",
 				"beginning.punctuation.definition.quote.markdown",
-				"meta.separator.markdown"
+				"meta.separator.markdown",
+				"punctuation.definition.raw.markdown"
 			],
 			"settings": {
 				"fontStyle": "italic",
+				"foreground": "#bbbbbb8e"
+			}
+		},
+		{
+			"name": "Markdown: Raw String",
+			"scope": [
+				"markup.inline.raw.string.markdown"
+			],
+			"settings": {
 				"foreground": "#bbbbbb8e"
 			}
 		},
