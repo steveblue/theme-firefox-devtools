@@ -184,7 +184,6 @@
 			"settings": {
 				"comment": "--tag--blue",
 				"foreground": "#75bfff"
-				// "foreground": "#86CBFA"
 			}
 		},
 		{
@@ -205,6 +204,14 @@
 			"scope": [ "text.xml", "text.html.basic" ],
 			"settings": {
 				"foreground": "#D9D9DC"
+			}
+		},
+
+		{
+			"name": "HTML/XML",
+			"scope": [ "text.html.basic comment.block.html" ],
+			"settings": {
+				"comment": "--GREY", "foreground": "#93939366"
 			}
 		},
 		{
@@ -357,7 +364,7 @@
 	 {
 		"scope": "storage.modifier",
 		"settings": {
-				"fontStyle": "italic" // undefined
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -368,10 +375,9 @@
 					"punctuation.section.embedded"
 			],
 			"settings": {
-					"fontStyle": "italic" // undefined
+					"fontStyle": "italic"
 			}
 		},
-
 		{
 			"scope": [
 					"keyword.operator.new",
@@ -381,20 +387,17 @@
 					"keyword.operator.logical.python"
 			],
 			"settings": {
-					"fontStyle": "italic" // undefined
+					"fontStyle": "italic"
 			}
-	},
-
-
-	{
-		"name": "this.self",
-		"scope": "variable.language",
-		"settings": {
-				"fontStyle": "italic" // undefined
-		}
-	},
-
-		{ // undefined
+	  },
+		{
+			"name": "this.self",
+			"scope": "variable.language",
+			"settings": {
+					"fontStyle": "italic"
+			}
+		},
+		{
 			"name": "@Decorator",
 			"scope": [
 					"meta.decorator punctuation.decorator"
@@ -419,17 +422,10 @@
 		{
 			"scope": "keyword.control",
 			"settings": {
-					"fontStyle": "italic" // undefined
+					"fontStyle": "italic"
 			}
 		},
-		{
-			"scope": ["source.ts meta.type.annotation.ts",
-								"source.ts meta.class.ts meta.field.declaration.ts meta.type.annotation.ts meta.object.type.ts meta.indexer.declaration.ts meta.type.annotation.ts"],
-			"settings": {
-				"fontStyle": "italic", // undefined
-				"foreground": "#bbbbbb8e"
-			}
-		},
+
 		{
 			"name": "",
 			"scope": [
@@ -444,14 +440,6 @@
 				"foreground": "#FF7DE9"
 			}
 		},
-
-		// {
-		// 	"name": "TS",
-		// 	"scope": "source.ts meta.var.expr.ts meta.var-single-variable.expr.ts meta.definition.variable.ts variable.other.readwrite.ts",
-		// 	"settings": {
-		// 		"foreground": "#75BFFF"
-		// 	}
-		// },
 		{
 			"name": "TS",
 			"scope": "source.ts string.quoted",
@@ -461,7 +449,21 @@
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Comments",
+			"scope": ["source.ts comment.line","source.ts comment.block.ts"],
+			"settings":  { "comment": "--GREY", "foreground": "#93939366" }
+		},
+		{
+			"name": "TS Annotations",
+			"scope": ["source.ts meta.type.annotation.ts",
+								"source.ts meta.class.ts meta.field.declaration.ts meta.type.annotation.ts meta.object.type.ts meta.indexer.declaration.ts meta.type.annotation.ts"],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#bbbbbb8e"
+			}
+		},
+		{
+			"name": "TS Variables",
 			"scope": "source.ts support.variable.dom.ts",
 			"settings": {
 				"comment": "--theme-highlight-red",
@@ -469,7 +471,7 @@
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Decorators",
 			"scope": "source.ts meta.decorator.ts",
 			"settings": {
 				"foreground": "#86DE74"
@@ -477,7 +479,7 @@
 		},
 
 		{
-			"name": "TS",
+			"name": "TS Decorator Function",
 			"scope": ["source.ts meta.decorator.ts meta.function-call.ts entity.name.function.ts"],
 			"settings": {
 				"foreground": "#42B97C"
@@ -485,14 +487,14 @@
 		},
 
 		{
-			"name": "TS",
+			"name": "TS Decorator Object",
 			"scope": ["source.ts meta.decorator.ts meta.objectliteral.ts punctuation.definition.block.ts"],
 			"settings": {
 				"foreground": "#86DE74"
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Decorator Object Braces",
 			"scope": ["source.ts meta.decorator.ts meta.objectliteral.ts",
 								"source.ts meta.decorator.ts meta.objectliteral.ts meta.object.member.ts meta.array.literal.ts meta.brace.square.ts"],
 			"settings": {
@@ -500,21 +502,21 @@
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Decorator @",
 			"scope": "source.ts punctuation.decorator.ts",
 			"settings": {
 				"foreground": "#86DE74"
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Decorator Injection",
 			"scope": "source.ts meta.decorator.ts variable.other.readwrite.ts",
 			"settings": {
 				"foreground": "#75BFFF"
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Variable Property",
 			"scope": "source.ts support.variable.property.dom.ts",
 			"settings": {
 				"comment": "--theme-highlight-green",
@@ -522,7 +524,7 @@
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Key Value",
 			"scope": "source.ts new.expr.ts meta.objectliteral.ts punctuation.separator.key-value.ts",
 			"settings": {
 				"comment": "--theme-highlight-?grey",
@@ -530,7 +532,7 @@
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Alias",
 			"scope": "source.ts meta.import.ts variable.other.readwrite.alias.ts",
 			"settings": {
 				"comment": "--theme-highlight-blue",
@@ -538,7 +540,7 @@
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Import",
 			"scope": "source.ts meta.import.ts keyword.control.from.ts",
 			"settings": {
 				"comment": "--theme-highlight-red",
@@ -546,7 +548,7 @@
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Function",
 			"scope": "source.ts meta.function-call.ts variable.other.object.ts",
 			"settings": {
 				"comment": "--theme-highlight-purple",
@@ -554,7 +556,7 @@
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Function name",
 			"scope": "source.ts meta.function-call.ts entity.name.function.ts",
 			"settings": {
 				"comment": "--theme-highlight-green",
@@ -562,7 +564,7 @@
 			}
 		},
 		{
-			"name": "TS",
+			"name": "TS Object Literal Key",
 			"scope": "source.ts meta.object-literal.key.ts",
 			"settings": {
 				"comment": "--theme-highlight-green",

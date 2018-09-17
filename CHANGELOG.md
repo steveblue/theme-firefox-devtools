@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+- Updated screenshot
+- Unified comments
+- Fixed naming issues
+
 ## 0.1.1
 - Beautified more TypeScript
 - Improved color of Decorators
