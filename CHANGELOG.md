@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.3
+- Improved JS specific highlighting
+
 ## 0.1.2
 - Updated screenshot
 - Unified comments
