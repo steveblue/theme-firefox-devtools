@@ -479,7 +479,7 @@
 			"name": "TS",
 			"scope": ["source.ts meta.decorator.ts meta.function-call.ts entity.name.function.ts"],
 			"settings": {
-				"foreground": "#5a994e"
+				"foreground": "#42B97C"
 			}
 		},
 
@@ -503,6 +503,13 @@
 			"scope": "source.ts punctuation.decorator.ts",
 			"settings": {
 				"foreground": "#86DE74"
+			}
+		},
+		{
+			"name": "TS",
+			"scope": "source.ts meta.decorator.ts variable.other.readwrite.ts",
+			"settings": {
+				"foreground": "#75BFFF"
 			}
 		},
 		{
