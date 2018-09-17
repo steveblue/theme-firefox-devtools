@@ -1,5 +1,5 @@
 {
-	"name": "Firefox DevTools",
+	"name": "Firefox DevTools Italic",
 	"type": "dark",
 	"colors": {
 		"foreground": "#8699a9",
@@ -80,6 +80,24 @@
 				"selection": ""
 			}
 		},
+		{
+			"scope": "emphasis",
+			"settings": {
+					"fontStyle": "italic"
+			}
+		},
+		{
+				"scope": "strong",
+				"settings": {
+						"fontStyle": "bold"
+				}
+		},
+    {
+			"scope": "markup.italic",
+			"settings": {
+					"fontStyle": "italic"
+			}
+	 },
 		{
 			"name": "Comment",
 			"scope": "comment",
@@ -173,6 +191,7 @@
 			"name": "Tag attribute",
 			"scope": "entity.other.attribute-name",
 			"settings": {
+				"fontStyle": "italic",
 				"comment": "--tag--pink",
 				"foreground": "#FF97E9"
 				// "foreground": "#FF95EB"
@@ -329,6 +348,62 @@
 			"comment": "=========== Typescript =========="
 		},
 		{
+			"scope": "storage.type",
+			"settings": {
+					"fontStyle": "italic"
+			}
+	 },
+	 {
+		"scope": "storage.modifier",
+		"settings": {
+				"fontStyle": "italic" // undefined
+			}
+		},
+		{
+			"name": "String interpolation",
+			"scope": [
+					"punctuation.definition.template-expression.begin",
+					"punctuation.definition.template-expression.end",
+					"punctuation.section.embedded"
+			],
+			"settings": {
+					"fontStyle": "italic" // undefined
+			}
+		},
+
+		{
+			"scope": [
+					"keyword.operator.new",
+					"keyword.operator.expression",
+					"keyword.operator.cast",
+					"keyword.operator.sizeof",
+					"keyword.operator.logical.python"
+			],
+			"settings": {
+					"fontStyle": "italic" // undefined
+			}
+	},
+
+
+	{
+		"name": "this.self",
+		"scope": "variable.language",
+		"settings": {
+				"fontStyle": "italic" // undefined
+		}
+	},
+
+		{ // undefined
+			"name": "@Decorator",
+			"scope": [
+					"meta.decorator punctuation.decorator"
+			],
+			"settings": {
+					"fontStyle": "italic"
+			}
+		},
+
+		{
 			"comment": [
 				"source.ts meta.interface.ts entity.name.type.interface.ts",
 				"source.ts meta.interface.ts storage.type.interface.ts"
@@ -339,16 +414,36 @@
 				"foreground": "#FF9900"
 			}
 		},
+
+		{
+			"scope": "keyword.control",
+			"settings": {
+					"fontStyle": "italic" // undefined
+			}
+		},
+		{
+			"scope": ["source.ts meta.type.annotation.ts",
+								"source.ts meta.class.ts meta.field.declaration.ts meta.type.annotation.ts meta.object.type.ts meta.indexer.declaration.ts meta.type.annotation.ts"],
+			"settings": {
+				"fontStyle": "italic", // undefined
+				"foreground": "#bbbbbb8e"
+			}
+		},
 		{
 			"name": "",
 			"scope": [
-				"source.ts meta.var.expr.ts storage.type.ts",
-				"source.ts meta.import.ts keyword.control.import.ts "
+				"meta.var.expr.ts storage.type.ts",
+				"keyword.control.import.ts",
+				"keyword.control.export.ts",
+				"keyword.control.from.ts",
+				"keyword.control.flow.ts",
+				"keyword.operator.new.ts"
 			],
 			"settings": {
 				"foreground": "#FF7DE9"
 			}
 		},
+
 		// {
 		// 	"name": "TS",
 		// 	"scope": "source.ts meta.var.expr.ts meta.var-single-variable.expr.ts meta.definition.variable.ts variable.other.readwrite.ts",
@@ -369,7 +464,45 @@
 			"scope": "source.ts support.variable.dom.ts",
 			"settings": {
 				"comment": "--theme-highlight-red",
-				"foreground": "#FF7DE9"
+				"foreground": "#d96629"
+			}
+		},
+		{
+			"name": "TS",
+			"scope": "source.ts meta.decorator.ts",
+			"settings": {
+				"foreground": "#86DE74"
+			}
+		},
+
+		{
+			"name": "TS",
+			"scope": ["source.ts meta.decorator.ts meta.function-call.ts entity.name.function.ts"],
+			"settings": {
+				"foreground": "#5a994e"
+			}
+		},
+
+		{
+			"name": "TS",
+			"scope": ["source.ts meta.decorator.ts meta.objectliteral.ts punctuation.definition.block.ts"],
+			"settings": {
+				"foreground": "#86DE74"
+			}
+		},
+		{
+			"name": "TS",
+			"scope": ["source.ts meta.decorator.ts meta.objectliteral.ts",
+								"source.ts meta.decorator.ts meta.objectliteral.ts meta.object.member.ts meta.array.literal.ts meta.brace.square.ts"],
+			"settings": {
+				"foreground": "#75BFFF"
+			}
+		},
+		{
+			"name": "TS",
+			"scope": "source.ts punctuation.decorator.ts",
+			"settings": {
+				"foreground": "#86DE74"
 			}
 		},
 		{

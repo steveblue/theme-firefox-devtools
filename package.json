@@ -1,9 +1,9 @@
 {
-	"name": "theme-firefox-devtools",
-	"displayName": "Firefox DevTools",
-	"description": "Syntax coloring based on Firefox Developer Tools coloring",
+	"name": "theme-firefox-devtools-italic",
+	"displayName": "Firefox DevTools Italic",
+	"description": "Syntax coloring based on Firefox Developer Tools coloring with support for italics",
 	"version": "0.1.1",
-	"publisher": "clintonrost",
+	"publisher": "steveblue",
 	"categories": [
 		"Themes"
 	],
@@ -22,18 +22,18 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Firefox Devtools",
+				"label": "Firefox Devtools Italic",
 				"uiTheme": "vs-dark",
-				"path": "./themes/firefox_devtools.json"
+				"path": "./themes/firefox_devtools_italic.json"
 			}
 		]
 	},
 	"bugs": {
-		"url": "https://github.com/clintonrost/theme-firefox-devtools/issues"
+		"url": "https://github.com/steveblue/theme-firefox-devtools/issues"
 	},
-	"homepage": "https://github.com/clintonrost/theme-firefox-devtools/blob/master/README.md",
+	"homepage": "https://github.com/steveblue/theme-firefox-devtools/blob/master/README.md",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/clintonrost/theme-firefox-devtools"
+		"url": "https://github.com/steveblue/theme-firefox-devtools"
 	}
 }
