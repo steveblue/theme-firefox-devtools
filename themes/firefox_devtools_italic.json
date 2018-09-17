@@ -249,9 +249,10 @@
 		},
 		{
 			"name": "HTML/XML: String",
-			"scope": [ "text.html.basic string.quoted", "text.xml string.quoted" ],
+			"scope": [ "text.html.basic string.quoted", "text.xml string.quoted", "text.html.basic string.quoted.double.html" ],
 			"settings": {
-				"foreground": "#BB9CF1"
+				"foreground": "bbbbbbff",
+				"background": "#0e1014ff"
 			}
 		},
 		{
@@ -727,6 +728,7 @@
 		{
 			"name": "CSS: Class",
 			"scope": [
+				"source.css.scss entity.other.attribute-name.class.css",
 				"meta.selector.css entity.other.attribute-name.class.css",
 				"entity.other.attribute-name.class.mixin"
 			],
@@ -791,10 +793,25 @@
 			}
 		},
 		{
+			"name": "SCSS: Variable",
+			"scope": [ "source.css.scss variable.scss" ],
+			"settings": {
+				"foreground": "#86DE74"
+			}
+		},
+
+		{
+			"name": "SCSS Import",
+			"scope": ["source.css.scss keyword.control.at-rule.import.scss", "source.css.scss keyword.control.at-rule.include.scss"],
+			"settings": {
+				"foreground": "#FF7DE9"
+			}
+		},
+		{
 			"name": "CSS: Number",
 			"scope": "constant.numeric.css",
 			"settings": {
-				"foreground": "#ff7de9"
+				"foreground": "#ffcd22"
 			}
 		},
 		{
