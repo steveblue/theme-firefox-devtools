@@ -2,6 +2,7 @@
 
 ## 0.1.3
 - Improved JS specific highlighting
+- Added support for Markdown
 
 ## 0.1.2
 - Updated screenshot

@@ -965,6 +965,53 @@
 			"settings": {
 				"foreground": "#6969FA"
 			}
+		},
+		{
+			"name": "Markdown: Punctuation",
+			"scope": [
+				"markup.heading.markdown",
+				"punctuation.definition.markdown",
+				"punctuation.definition.string.begin.markdown",
+				"punctuation.definition.string.end.markdown",
+				"punctuation.definition.metadata.markdown",
+				"beginning.punctuation.definition.list.markdown",
+				"beginning.punctuation.definition.quote.markdown",
+				"meta.separator.markdown"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#bbbbbb8e"
+			}
+		},
+		{
+			"name": "Markdown: Inline URL",
+			"scope": [
+				"markup.underline.link.markdown",
+				"markup.underline.link.image.markdown"
+			],
+			"settings": {
+				"foreground": "#bb9cf1ff",
+				"background": "#0e1014ff"
+			}
+		},
+		{
+			"name": "Markdown: Link Title",
+			"scope": [
+				"string.other.link.title.markdown",
+				"string.other.link.description.markdown"
+			],
+			"settings": {
+				"foreground": "#75bfff"
+			}
+		},
+		{
+			"name": "Markdown: Headings",
+			"scope": "entity.name.section.markdown",
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#bbbbbbff",
+				"background": "#0e1014ff"
+			}
 		}
 	]
 }
