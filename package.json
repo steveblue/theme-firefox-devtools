@@ -2,7 +2,7 @@
 	"name": "theme-firefox-devtools-italic",
 	"displayName": "Firefox DevTools Italic",
 	"description": "Syntax coloring based on Firefox Developer Tools coloring with support for italics",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"publisher": "steveblue",
 	"categories": [
 		"Themes"

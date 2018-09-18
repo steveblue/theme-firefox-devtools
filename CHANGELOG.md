@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.4
+- Fix screenshot
+
 ## 0.1.3
 - Improved JS specific highlighting
 - Added support for Markdown

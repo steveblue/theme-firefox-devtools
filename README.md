@@ -7,7 +7,7 @@
 This version has support for italics.
 
 #### Main editor + Explorer, standard icon theme
-![Firefox DevTools Theme screenshot](https://github.com/steveblue/theme-firefox-devtools/blob/master/assets/screenshot.png)
+![Firefox DevTools Theme screenshot](https://cdn.rawgit.com/steveblue/theme-firefox-devtools/ffb55ac3/assets/screenshot.png)
 
 
 This project a fork of [https://github.com/clintonrost/theme-firefox-devtools](https://github.com/clintonrost/theme-firefox-devtools).
